@@ -7,8 +7,8 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
 local gfs = require("gears.filesystem")
-local themes_path = gfs.get_themes_dir()
-
+--local themes_path = gfs.get_themes_dir()
+local themes_path = "/home/vishad/.config/awesome/themes/"
 local theme = {}
 
 theme.font = "CommitMono Nerd Font"
@@ -19,7 +19,7 @@ theme.bg_urgent = "#ff0000"
 theme.bg_minimize = "#444444"
 theme.bg_systray = theme.bg_normal
 
-theme.fg_normal = "#2093d1"
+theme.fg_normal = "#ffffff"
 theme.fg_focus = "#ffffff"
 theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
@@ -94,7 +94,8 @@ theme.titlebar_maximized_button_focus_inactive = themes_path .. "vishad/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path .. "vishad/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active = themes_path .. "vishad/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themes_path .. "vishad/wallpaper.png"
+theme.wallpaper = themes_path .. "wallpaper.png"
+--theme.wallpaper = "/home/vishad/.config/awesome/themes/vishad/wallpaper.jpeg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path .. "vishad/layouts/fairhw.png"
